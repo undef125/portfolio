@@ -1,0 +1,132 @@
+.sidenav {
+    height: 100%;
+    width: 3.2rem;
+    background-color: #2382ab;
+    user-select: none;
+    box-shadow: 1px 2px 5px black;
+}
+.sidenav > nav {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+}
+.iconsHolder {
+    width: 95%;
+}
+.iconsHolder > div {
+    width: 105%;
+    margin-top: 0.5rem;
+    height: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.2rem;
+    transition: 0.5s ease;
+    font-size: 0.8rem;
+    text-align: center;
+}
+.iconsHolder > div:hover {
+    background-color: #74b4b4;
+}
+
+a {
+    width: 105% !important;
+    color: inherit !important;
+    text-decoration: inherit !important;
+    margin-top: 0.5rem !important;
+    height: 4.5rem !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    cursor: pointer !important;
+    padding: 0.2rem !important;
+    transition: 0.5s ease !important;
+    font-size: 0.86rem !important;
+}
+a:hover {
+    background-color: #74b4b4 !important;
+    /* color: white; */
+}
+
+.active {
+    background-color: #74b4b4;
+}
+.cvButton {
+    width: 10rem;
+    height: 3rem;
+    margin: 2rem auto;
+    background-color: inherit;
+    outline: none;
+    border: 1px solid rgb(6, 11, 152);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color .4s ease;
+}
+.cvButton:hover {
+    background-color: rgba(20, 135, 170, 0.662);
+}
+
+/* about me */
+.aboutmecontainer {
+    width: 80%;
+    height: 100%;
+    margin: 5rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    user-select: none;
+}
+.textSection {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hi {
+    font-size: 2rem;
+}
+.name {
+    font-size: 4rem;
+}
+.imageSection {
+    margin: 2rem auto;
+    animation: anim 3s infinite alternate ease;
+}
+
+@keyframes anim {
+    to {margin-top: .9rem;}
+}
+
+
+/*  Skills       */
+.skillHolder {
+    width: 90%;
+    margin: auto auto;
+}
+.skillText {
+    display: flex;
+    width: 20%;
+    margin: auto auto;
+    font-size: 3rem;
+    filter: drop-shadow(6px 5px 1px rgb(17, 148, 148))
+}
+.progHolder {
+    width: 80%; 
+    margin: auto auto;
+}
+.prog {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.progress {
+    width: 90%;
+}
+
+.progress-bar {
+    font-size: .8rem;
+}
