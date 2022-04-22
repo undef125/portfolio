@@ -15,7 +15,7 @@ export const AboutMe = (props: Props) => {
                 <button className="cvButton">Download CV</button>
             </div>
             <div className="imageSection">
-                <img src="/done.png" alt="my picture" />
+                <img src="/done.png" alt="" />
             </div>
         </div>
     );
