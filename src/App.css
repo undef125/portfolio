@@ -1,7 +1,8 @@
 .App{
   background-color: #74b4b4;
-  height: 100vh;
+  height: 100%;
   width: 100%;
+  margin: 0;
   display: grid;
   grid-template-columns: 4rem auto;
 }

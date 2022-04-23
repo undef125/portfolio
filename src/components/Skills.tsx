@@ -30,36 +30,40 @@ export const Skills = (props: Props) => {
             <div className="skillText">Skills</div>
             <div className="progHolder">
                 <div className="prog">
-                    <AiFillHtml5 size={45} />
-                    <ProgressBar animated now={99} label={"HTML"}/>
+                    <img src="/html.png" alt="" />
+                    <ProgressBar animated now={99} label={"HTML"} />
                 </div>
                 <div className="prog">
-                    <DiCss3 size={45} />
-                    <ProgressBar animated now={90} label={"CSS"}/>
+                    <img src="/css.png" alt="" />
+                    <ProgressBar animated now={90} label={"CSS"} />
                 </div>
                 <div className="prog">
-                    <IoLogoJavascript size={45} />
-                    <ProgressBar animated now={88} label={"JavaScript"}/>
+                    <img src="/js.png" alt="" />
+                    <ProgressBar animated now={88} label={"JavaScript"} />
                 </div>
                 <div className="prog">
-                    <FaReact size={45} />
-                    <ProgressBar animated now={80} label={"React"}/>
+                    <img src="/logo192.png" alt="" />
+                    <ProgressBar animated now={80} label={"React"} />
                 </div>
                 <div className="prog">
-                    <FaBootstrap size={45} />
-                    <ProgressBar animated now={96} label={"Bootstrap and ReactBootstrap"}/>
+                    <img src="/bootstrap.png" alt="" />
+                    <ProgressBar
+                        animated
+                        now={96}
+                        label={"Bootstrap and ReactBootstrap"}
+                    />
                 </div>
                 <div className="prog">
                     <SiRedux size={45} />
-                    <ProgressBar animated now={60} label={"Redux-Toolkit"}/>
+                    <ProgressBar animated now={60} label={"Redux-Toolkit"} />
                 </div>
                 <div className="prog">
-                    <SiTypescript size={45} />
-                    <ProgressBar animated now={68} label={"TypeScript"}/>
+                    <img src="/typescript.png" alt="" />
+                    <ProgressBar animated now={68} label={"TypeScript"} />
                 </div>
                 <div className="prog">
-                    <SiCplusplus size={45} />
-                    <ProgressBar animated now={70} label={"C++"}/>
+                    <img src="/c.png" alt="" />
+                    <ProgressBar animated now={70} label={"C++"} />
                 </div>
             </div>
         </div>

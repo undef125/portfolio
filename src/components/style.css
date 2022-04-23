@@ -92,17 +92,46 @@ a:hover {
 }
 .imageSection {
     margin: 2rem auto;
-    animation: anim 3s infinite alternate ease;
+    /* animation: anim 3s infinite alternate ease; */
 }
 
 @keyframes anim {
     to {margin-top: .9rem;}
 }
 
+/*                  responsive            */
+@media only screen and (max-width: 600px) {
+    .aboutmecontainer {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    .textSection {
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+    }
+    .hi {
+        font-size: 1.3rem;
+    }
+    .name {
+        font-size: 2rem;
+    }
+
+    .imageSection {
+        margin: 0;
+        height: 100%;
+    }    
+  }
+
 
 /*  Skills       */
 .skillHolder {
     width: 90%;
+    height: 100vh;
     margin: auto auto;
 }
 .skillText {
@@ -121,7 +150,10 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 1.7rem;
+}
+.prog > .progress {
+    margin-left: 1rem;
 }
 .progress {
     width: 90%;
@@ -129,4 +161,14 @@ a:hover {
 
 .progress-bar {
     font-size: .8rem;
+}
+
+.prog > img {
+    height: 2.5rem;
+}
+
+/*         responsive         */
+@media only screen and (max-width: 600px) {
+ 
+
 }
