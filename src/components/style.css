@@ -70,9 +70,8 @@ a {
 .aboutmecontainer {
     width: 100%;
     height: 100%;
-    margin: 5rem auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     user-select: none;
 }
 .textSection {
@@ -82,16 +81,18 @@ a {
     justify-content: center;
     color: rgb(255, 255, 255);
     margin-top: 2rem;
+    margin-left: .5rem;
 }
 .cvButton {
     color: rgb(174, 174, 174);
+    margin-top: 0;
 }
-.hi > p{
-    font-size: 2rem;
-    margin-top: 2rem;
+.hi{
+    font-size: 1.3rem;
+    margin-top: .8rem;
 }
-.name > p{
-    font-size: 3rem;
+.name{
+    font-size: 2.4rem;
     background: linear-gradient(to bottom,#4266c0, #16af93);
   
    background-attachment: fixed;
@@ -102,7 +103,8 @@ a {
 .textSection > p{
     width: 90%;
     margin: auto;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    margin-top: .8rem;
 }
 .imageSection {
     height: 5rem;
@@ -118,74 +120,56 @@ a {
     to {margin-top: 0rem;}
 }
 
-.floatingDivs > div {
-    height: 2rem;
-    width: 2rem;
-    background-image: linear-gradient(to right, #5f9351a2 rgba(98, 59, 171, 0.56));    
-    top:0;
-    opacity: 0;
-}
-
-.one {position: absolute; height: 2rem; width: 1rem; inset: 0 0 0 0; border-radius: 10px; animation: moonknight 10s linear infinite; position: absolute;}
-.two {position: absolute; height: 2rem; width: 1rem; inset: 0 0 0 20vw; border-radius: 20px; animation: moonknight2 60s linear infinite;}
-.thr {position: absolute; height: 2rem; width: 1rem; inset: 0 0 0 40vw; border-radius: 10px; animation: moonknight 15s linear infinite; position: absolute;}
-.fou {position: absolute; height: 2rem; width: 1rem; inset: 0 0 0 60vw; border-radius: 40px; animation: moonknight2 35s linear infinite; position: absolute;}
-.fiv {position: absolute; height: 2rem; width: 1rem; inset: 0 0 0 80vw; border-radius: 10px; animation: moonknight 50s linear infinite; position: absolute;}
-
-@keyframes moonknight {
-    0%{  top: 90vh;  opacity: 1; transform: rotate(45deg);box-shadow: 10px 10px 10px rgb(31, 113, 180), 10px 10px 10px rgb(31, 113, 180);}
-    20%{ top: 80vh; opacity: .8; transform: rotate(90deg);box-shadow: 8px 8px 8px rgb(21, 199, 27), 10px 10px 10px rgb(31, 113, 180);}
-    40%{ top: 60vh; opacity: .6; transform: rotate(135deg);box-shadow: 6px 6px 6px rgb(168, 28, 154), 10px 10px 10px rgb(31, 113, 180);}
-    60%{ top: 40vh; opacity: .4; transform: rotate(180deg);box-shadow: 4px 4px 4px rgb(218, 8, 15), 10px 10px 10px rgb(31, 113, 180);}
-    80%{ top: 20vh; opacity: .2; transform: rotate(225deg);box-shadow: 2px 2px 2px rgb(224, 203, 13), 10px 10px 10px rgb(31, 113, 180);}
-    100%{top: 0vh;  opacity: 0; transform: rotate(360deg);box-shadow: 2px 2px 4px rgb(9, 20, 29), 10px 10px 10px rgb(31, 113, 180);}
-}
-@keyframes moonknight2 {
-    0%{  top: 90vh;  opacity: 1; transform: rotate(45deg);box-shadow: 10px 10px 10px rgb(180, 170, 31), 10px 10px 10px rgb(31, 113, 180);}
-    20%{ top: 80vh; opacity: .8; transform: rotate(90deg);box-shadow: 8px 8px 8px rgb(235, 4, 239), 10px 10px 10px rgb(31, 113, 180);}
-    40%{ top: 60vh; opacity: .6; transform: rotate(135deg);box-shadow: 6px 6px 6px rgb(225, 11, 29), 10px 10px 10px rgb(31, 113, 180);}
-    60%{ top: 40vh; opacity: .4; transform: rotate(180deg);box-shadow: 4px 4px 4px rgb(222, 180, 180), 10px 10px 10px rgb(31, 113, 180);}
-    80%{ top: 20vh; opacity: .2; transform: rotate(225deg);box-shadow: 2px 2px 2px rgb(70, 189, 240), 10px 10px 10px rgb(31, 113, 180);}
-    100%{top: 0vh;  opacity: 0; transform: rotate(360deg);box-shadow: 2px 2px 4px rgb(12, 197, 30), 10px 10px 10px rgb(31, 113, 180);}
-}
-
 /*                  responsive            */
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 600px) {
     .aboutmecontainer {
         display: flex;
-        flex-direction: column;
-        margin: 0;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
     }
     .textSection {
-        width: 85%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: 0;
     }
     .hi {
-        font-size: 1.3rem;
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
     }
     .name {
-        font-size: 2rem;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    .textSection > p {
+        margin: 0;
+        margin: 1.6rem auto;
     }
 
     .imageSection {
-        margin: 0;
         height: 100%;
+        display: flex;
+        align-items: center;
     }    
+    .imageSection > img {
+        height: 30rem;
+    }
+    .cvButton {
+        margin-top: 0;
+    }
   }
 
 
 /*  Skills       */
 .skillHolder {
     width: 100%;
-    color:rgb(10, 134, 188);
 }
 .heading ,.contacttext,.mailme > p{
+    color:#727a94;
     font-family: 'Rajdhani', sans-serif;
     display: flex;
     font-size: 3.5rem;
+    margin-left: .4rem;
 }
 .progHolder {
     width: 80%; 
@@ -291,3 +275,92 @@ a {
     background-color: rebeccapurple;
     inset: 40% 50%;
 } */
+
+
+/*  Work     */
+.worksPage {
+    height: 100vh;
+    width: 90%;
+    margin: auto;
+    overflow-y: scroll;
+}
+.workHolder {
+    margin-top: 1rem;
+    background-color: #bdc1cf;
+    padding-bottom: .4rem;
+    border-radius: 0 0 10px 10px;
+}
+.workImageContainer {
+    height: 10rem;
+}
+
+.workImageContainer > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.title {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.workIconHolder {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    margin: auto;
+}
+.workIconHolder > div {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+    .worksPage {
+        overflow-y: scroll;
+        width: 100vw;
+    }
+    .allWorks{
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+    }
+}
+
+/*   Random Floating divs    */
+.floatingDivs{
+    position: relative;
+}
+
+.floatingDivs > div {
+    height: 2rem;
+    width: 2rem;
+    background-image: linear-gradient(to right, #5f9351a2 rgba(98, 59, 171, 0.56));    
+    top:0;
+    opacity: 0;
+}
+
+.one {position: absolute; height: 2rem; width: 1rem; inset: 0 0 0 0; border-radius: 10px; animation: moonknight 15s linear infinite;}
+.two {position: absolute; height: 2rem; width: 1rem; inset: 0 0 0 20vw; border-radius: 20px; animation: moonknight2 60s linear infinite;}
+.thr {position: absolute; height: 2rem; width: 1rem; inset: 0 0 0 40vw; border-radius: 10px; animation: moonknight 22s linear infinite;}
+.fou {position: absolute; height: 2rem; width: 1rem; inset: 0 0 0 60vw; border-radius: 40px; animation: moonknight2 35s linear infinite;}
+.fiv {position: absolute; height: 2rem; width: 1rem; inset: 0 0 0 80vw; border-radius: 10px; animation: moonknight 50s linear infinite;}
+.six {position: absolute; height: 2rem; width: 1rem; inset: 0 0 0 95vw; border-radius: 10px; animation: moonknight 80s linear infinite;}
+
+@keyframes moonknight {
+    0%{  top: 90vh;  opacity: 1; transform: rotate(45deg);box-shadow: 10px 10px 10px rgb(31, 113, 180), 10px 10px 10px rgb(31, 113, 180);}
+    20%{ top: 80vh; opacity: .8; transform: rotate(90deg);box-shadow: 8px 8px 8px rgb(21, 199, 27), 10px 10px 10px rgb(31, 113, 180);}
+    40%{ top: 60vh; opacity: .6; transform: rotate(135deg);box-shadow: 6px 6px 6px rgb(168, 28, 154), 10px 10px 10px rgb(31, 113, 180);}
+    60%{ top: 40vh; opacity: .4; transform: rotate(180deg);box-shadow: 4px 4px 4px rgb(218, 8, 15), 10px 10px 10px rgb(31, 113, 180);}
+    80%{ top: 20vh; opacity: .2; transform: rotate(225deg);box-shadow: 2px 2px 2px rgb(224, 203, 13), 10px 10px 10px rgb(31, 113, 180);}
+    100%{top: 0vh;  opacity: 0; transform: rotate(360deg);box-shadow: 2px 2px 4px rgb(9, 20, 29), 10px 10px 10px rgb(31, 113, 180);}
+}
+@keyframes moonknight2 {
+    0%{  top: 90vh;  opacity: 1; transform: rotate(45deg);box-shadow: 10px 10px 10px rgb(180, 170, 31), 10px 10px 10px rgb(31, 113, 180),10px 10px 10px rgb(180, 31, 81);}
+    20%{ top: 80vh; opacity: .8; transform: rotate(90deg);box-shadow: 8px 8px 8px rgb(235, 4, 239), 10px 10px 10px rgb(31, 113, 180),10px 10px 10px  rgb(180, 31, 81);}
+    40%{ top: 60vh; opacity: .6; transform: rotate(135deg);box-shadow: 6px 6px 6px rgb(225, 11, 29), 10px 10px 10px rgb(31, 113, 180),10px 10px 10px  rgb(180, 31, 81);}
+    60%{ top: 40vh; opacity: .4; transform: rotate(180deg);box-shadow: 4px 4px 4px rgb(222, 180, 180), 10px 10px 10px rgb(31, 113, 180),10px 10px 10px  rgb(180, 31, 81);}
+    80%{ top: 20vh; opacity: .2; transform: rotate(225deg);box-shadow: 2px 2px 2px rgb(70, 189, 240), 10px 10px 10px rgb(31, 113, 180),10px 10px 10px  rgb(180, 31, 81);}
+    100%{top: 0vh;  opacity: 0; transform: rotate(360deg);box-shadow: 2px 2px 4px rgb(12, 197, 30), 10px 10px 10px rgb(31, 113, 180),10px 10px 10px  rgb(180, 31, 81);}
+}

@@ -6,10 +6,12 @@ import { Skills } from "./components/Skills";
 import { Contact } from "./components/Contact";
 import { Works } from "./components/Works";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import RandomFloating from "./components/RandomFloating";
 
 function App() {
     return (
         <Router>
+            <RandomFloating />
             <div className="App">
                 <div>
                     <SideNav></SideNav>

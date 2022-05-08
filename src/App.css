@@ -2,7 +2,7 @@
   background-color: #3d404b;
   margin: 0;
   display: grid;
-  grid-template-columns: 4rem auto;
+  grid-template-columns: 3.3rem auto;
 }
 *{
   padding: 0;
