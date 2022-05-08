@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
 .sidenav {
     height: 100%;
     width: 3.2rem;
-    background-color: #2382ab;
+    background-color: #bfbbbb;
     user-select: none;
     box-shadow: 1px 2px 5px black;
+    min-height: 100vh;
+    max-height: 100vh;
 }
 .sidenav > nav {
     height: 90%;
@@ -12,9 +15,7 @@
     justify-content: center;
     align-items: space-between;
 }
-.iconsHolder {
-    width: 95%;
-}
+
 .iconsHolder > div {
     width: 105%;
     margin-top: 0.5rem;
@@ -29,7 +30,7 @@
     text-align: center;
 }
 .iconsHolder > div:hover {
-    background-color: #74b4b4;
+    background-color: #06113C;
 }
 
 a {
@@ -46,13 +47,9 @@ a {
     transition: 0.5s ease !important;
     font-size: 0.86rem !important;
 }
-a:hover {
-    background-color: #74b4b4 !important;
-    /* color: white; */
-}
 
 .active {
-    background-color: #74b4b4;
+    background-color: #3d404b;
 }
 .cvButton {
     width: 10rem;
@@ -60,18 +57,18 @@ a:hover {
     margin: 2rem auto;
     background-color: inherit;
     outline: none;
-    border: 1px solid rgb(6, 11, 152);
+    border: 1px solid rgb(38, 155, 18);
     font-size: 1.2rem;
     cursor: pointer;
     transition: background-color .4s ease;
 }
 .cvButton:hover {
-    background-color: rgba(20, 135, 170, 0.662);
+    background-color: rgba(35, 170, 20, 0.266);
 }
 
 /* about me */
 .aboutmecontainer {
-    width: 80%;
+    width: 100%;
     height: 100%;
     margin: 5rem auto;
     display: grid;
@@ -79,30 +76,82 @@ a:hover {
     user-select: none;
 }
 .textSection {
-    height: 70%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: rgb(255, 255, 255);
+    margin-top: 2rem;
 }
-.hi {
+.cvButton {
+    color: rgb(174, 174, 174);
+}
+.hi > p{
     font-size: 2rem;
+    margin-top: 2rem;
 }
-.name {
-    font-size: 4rem;
+.name > p{
+    font-size: 3rem;
+    background: linear-gradient(to bottom,#4266c0, #16af93);
+  
+   background-attachment: fixed;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.textSection > p{
+    width: 90%;
+    margin: auto;
+    font-size: 1.2rem;
 }
 .imageSection {
-    margin: 2rem auto;
-    /* animation: anim 3s infinite alternate ease; */
+    height: 5rem;
+}
+.imageSection > img {
+    height: 22rem;
+    object-fit: cover;
+    margin-bottom: 0;
+    filter:drop-shadow(1px 1px 2px rgb(196, 206, 206));
 }
 
 @keyframes anim {
-    to {margin-top: .9rem;}
+    to {margin-top: 0rem;}
+}
+
+.floatingDivs > div {
+    height: 2rem;
+    width: 2rem;
+    background-image: linear-gradient(to right, #5f9351a2 rgba(98, 59, 171, 0.56));    
+    top:0;
+    opacity: 0;
+}
+
+.one {position: absolute; height: 2rem; width: 1rem; inset: 0 0 0 0; border-radius: 10px; animation: moonknight 10s linear infinite; position: absolute;}
+.two {position: absolute; height: 2rem; width: 1rem; inset: 0 0 0 20vw; border-radius: 20px; animation: moonknight2 60s linear infinite;}
+.thr {position: absolute; height: 2rem; width: 1rem; inset: 0 0 0 40vw; border-radius: 10px; animation: moonknight 15s linear infinite; position: absolute;}
+.fou {position: absolute; height: 2rem; width: 1rem; inset: 0 0 0 60vw; border-radius: 40px; animation: moonknight2 35s linear infinite; position: absolute;}
+.fiv {position: absolute; height: 2rem; width: 1rem; inset: 0 0 0 80vw; border-radius: 10px; animation: moonknight 50s linear infinite; position: absolute;}
+
+@keyframes moonknight {
+    0%{  top: 90vh;  opacity: 1; transform: rotate(45deg);box-shadow: 10px 10px 10px rgb(31, 113, 180), 10px 10px 10px rgb(31, 113, 180);}
+    20%{ top: 80vh; opacity: .8; transform: rotate(90deg);box-shadow: 8px 8px 8px rgb(21, 199, 27), 10px 10px 10px rgb(31, 113, 180);}
+    40%{ top: 60vh; opacity: .6; transform: rotate(135deg);box-shadow: 6px 6px 6px rgb(168, 28, 154), 10px 10px 10px rgb(31, 113, 180);}
+    60%{ top: 40vh; opacity: .4; transform: rotate(180deg);box-shadow: 4px 4px 4px rgb(218, 8, 15), 10px 10px 10px rgb(31, 113, 180);}
+    80%{ top: 20vh; opacity: .2; transform: rotate(225deg);box-shadow: 2px 2px 2px rgb(224, 203, 13), 10px 10px 10px rgb(31, 113, 180);}
+    100%{top: 0vh;  opacity: 0; transform: rotate(360deg);box-shadow: 2px 2px 4px rgb(9, 20, 29), 10px 10px 10px rgb(31, 113, 180);}
+}
+@keyframes moonknight2 {
+    0%{  top: 90vh;  opacity: 1; transform: rotate(45deg);box-shadow: 10px 10px 10px rgb(180, 170, 31), 10px 10px 10px rgb(31, 113, 180);}
+    20%{ top: 80vh; opacity: .8; transform: rotate(90deg);box-shadow: 8px 8px 8px rgb(235, 4, 239), 10px 10px 10px rgb(31, 113, 180);}
+    40%{ top: 60vh; opacity: .6; transform: rotate(135deg);box-shadow: 6px 6px 6px rgb(225, 11, 29), 10px 10px 10px rgb(31, 113, 180);}
+    60%{ top: 40vh; opacity: .4; transform: rotate(180deg);box-shadow: 4px 4px 4px rgb(222, 180, 180), 10px 10px 10px rgb(31, 113, 180);}
+    80%{ top: 20vh; opacity: .2; transform: rotate(225deg);box-shadow: 2px 2px 2px rgb(70, 189, 240), 10px 10px 10px rgb(31, 113, 180);}
+    100%{top: 0vh;  opacity: 0; transform: rotate(360deg);box-shadow: 2px 2px 4px rgb(12, 197, 30), 10px 10px 10px rgb(31, 113, 180);}
 }
 
 /*                  responsive            */
 @media only screen and (max-width: 600px) {
     .aboutmecontainer {
-        height: 100vh;
         display: flex;
         flex-direction: column;
         margin: 0;
@@ -130,16 +179,13 @@ a:hover {
 
 /*  Skills       */
 .skillHolder {
-    width: 90%;
-    height: 100vh;
-    margin: auto auto;
+    width: 100%;
+    color:rgb(10, 134, 188);
 }
-.skillText {
+.heading ,.contacttext,.mailme > p{
+    font-family: 'Rajdhani', sans-serif;
     display: flex;
-    width: 20%;
-    margin: auto auto;
-    font-size: 3rem;
-    filter: drop-shadow(6px 5px 1px rgb(17, 148, 148))
+    font-size: 3.5rem;
 }
 .progHolder {
     width: 80%; 
@@ -168,7 +214,80 @@ a:hover {
 }
 
 /*         responsive         */
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 600px) {
  
 
 }
+
+
+/*         contact          */
+.wholeContact {
+    color:rgb(10, 134, 188);
+}
+
+.contactContainer {
+    margin-top: 5%;
+}
+.socialMedias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    width: 95%;
+    margin: auto;
+    margin-top: 1.5rem;
+}
+.socialMedias > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(214, 210, 210);
+}
+.imgholder {
+    height: 3rem;
+    cursor: pointer;
+}
+.imgholder > img {
+    height: 3rem;
+    object-fit: cover;
+}
+
+.mailme {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.mailme > p {
+    margin-top: 4rem;
+}
+
+.mailme > input{
+    width: 90%;
+    margin: 1rem auto;
+    resize: none;
+    outline: none;
+    background-color: inherit;
+    border: 0px;
+    border-bottom: 1px solid coral;
+}
+.mailme > input:focus {
+    border-bottom: 1px solid rgb(9, 118, 149);
+}
+.sumbitBtn {
+    margin: auto;
+    margin-top: 1rem;
+    width: 50%;
+}
+
+@keyframes float {
+    to{margin-right: 3rem;}
+}
+
+/* .imgholder:hover::before {
+    content: "";
+    position: absolute;
+    height: 2rem;
+    width: 2rem;
+    background-color: rebeccapurple;
+    inset: 40% 50%;
+} */

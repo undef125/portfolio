@@ -1,15 +1,13 @@
-import React from "react";
+import React, { FC } from "react";
 import { ProgressBar } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./style.css";
-import { SiRedux} from "react-icons/si";
-
 type Props = {};
 
-export const Skills = (props: Props) => {
+export const Skills:FC = (props: Props) => {
     return (
         <div className="skillHolder">
-            <div className="skillText">Skills</div>
+            <div className="heading">Skills</div>
             <div className="progHolder">
                 <div className="prog">
                     <img src="/html.png" alt="" />
@@ -36,7 +34,7 @@ export const Skills = (props: Props) => {
                     />
                 </div>
                 <div className="prog">
-                    <SiRedux size={45} />
+                <img src="/redux.png" alt="" />
                     <ProgressBar animated now={60} label={"Redux-Toolkit"} />
                 </div>
                 <div className="prog">
@@ -45,7 +43,7 @@ export const Skills = (props: Props) => {
                 </div>
                 <div className="prog">
                     <img src="/c.png" alt="" />
-                    <ProgressBar animated now={70} label={"C++"} />
+                    <ProgressBar animated now={70} label={"C/C++"} />
                 </div>
             </div>
         </div>
