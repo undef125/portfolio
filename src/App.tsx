@@ -7,10 +7,16 @@ import { Contact } from "./components/Contact";
 import { Works } from "./components/Works";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import RandomFloating from "./components/RandomFloating";
+import { Helmet } from 'react-helmet';
 
 function App() {
     return (
         <Router>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Kapil Kunwar</title>
+                
+            </Helmet>
             <RandomFloating />
             <div className="App">
                 <div>
