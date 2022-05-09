@@ -1,8 +1,4 @@
-import React from "react";
-
-type Props = {};
-
-const RandomFloating = (props: Props) => {
+const RandomFloating = () => {
     return (
         <div className="floatingDivs">
             <div className="one"></div>

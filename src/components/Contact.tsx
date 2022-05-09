@@ -2,9 +2,8 @@ import { useState } from "react";
 import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-type Props = {};
 
-export const Contact = (props: Props) => {
+export const Contact = () => {
 
     const [name, setName] = useState("");
     const [message, setMessage] = useState("");

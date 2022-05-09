@@ -2,9 +2,8 @@ import React, { FC } from "react";
 import { ProgressBar } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./style.css";
-type Props = {};
 
-export const Skills:FC = (props: Props) => {
+export const Skills:FC = () => {
     return (
         <div className="skillHolder">
             <div className="heading">Skills</div>

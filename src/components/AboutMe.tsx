@@ -1,8 +1,4 @@
-import React from "react";
-
-type Props = {};
-
-export const AboutMe = (props: Props) => {
+export const AboutMe = () => {
     return (
         <>
             <div className="aboutmecontainer">

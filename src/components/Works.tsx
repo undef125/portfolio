@@ -1,8 +1,7 @@
 import { AiFillEye, AiOutlineCode } from "react-icons/ai";
 import { Tooltip, OverlayTrigger } from "react-bootstrap";
-type Props = {};
 
-export const Works = (props: Props) => {
+export const Works = () => {
     const renderTooltipCode = (gg: any) => {
       return (
         <Tooltip id="button-tooltip" {...gg}>

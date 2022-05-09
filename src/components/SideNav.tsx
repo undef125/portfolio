@@ -6,9 +6,7 @@ import { GiSkills } from "react-icons/gi";
 import { MdWork } from "react-icons/md";
 import { Link,useLocation } from "react-router-dom";
 
-type Props = {};
-
-export const SideNav = (props: Props) => {
+export const SideNav = () => {
     const handleActiveClick = (e: React.MouseEvent<HTMLElement>) => {
         const test = document.querySelectorAll(".iconsHolder > a");
         test.forEach((e) => {
