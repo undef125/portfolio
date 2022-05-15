@@ -3,12 +3,19 @@
 .sidenav {
     height: 100%;
     width: 3.2rem;
-    background-color: #bfbbbb;
+    /* background-color: #bfbbbb; */
     user-select: none;
-    box-shadow: 1px 2px 5px black;
+    /* box-shadow: 1px 2px 5px black; */
     min-height: 100vh;
     max-height: 100vh;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    --webkit-backdrop-filter: blur(10px);
+    border-radius: `0px;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
 }
+
 .sidenav > nav {
     height: 90%;
     display: flex;
