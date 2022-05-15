@@ -11,7 +11,7 @@
     background: linear-gradient(135deg, rgba(255,255,255,0.1),rgba(255,255,255,0));
     backdrop-filter: blur(10px);
     --webkit-backdrop-filter: blur(10px);
-    border-radius: `0px;
+    border-radius: 0px;
     border: 1px solid rgba(255,255,255,0.18);
     box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
 }
@@ -360,12 +360,13 @@ a {
 .floatingDivs > div {
     height: 2rem;
     width: 2rem;
-    background-image: linear-gradient(
-        to right,
-        #5f9351a2 rgba(98, 59, 171, 0.56)
-    );
     top: 0;
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
     opacity: 0;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    /* box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37); */
 }
 
 .one {
@@ -373,7 +374,7 @@ a {
     height: 2rem;
     width: 1rem;
     inset: 0 0 0 0;
-    border-radius: 10px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1),rgba(228, 68, 68, 0.4));
     animation: moonknight 15s linear infinite;
 }
 .two {
@@ -381,7 +382,7 @@ a {
     height: 2rem;
     width: 1rem;
     inset: 0 0 0 20vw;
-    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1),rgba(93, 237, 36, 0.4));
     animation: moonknight2 60s linear infinite;
 }
 .thr {
@@ -389,7 +390,7 @@ a {
     height: 2rem;
     width: 1rem;
     inset: 0 0 0 40vw;
-    border-radius: 10px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1),rgba(57, 12, 206, 0.4));
     animation: moonknight 22s linear infinite;
 }
 .fou {
@@ -397,7 +398,7 @@ a {
     height: 2rem;
     width: 1rem;
     inset: 0 0 0 60vw;
-    border-radius: 40px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1),rgba(194, 5, 237, 0.4));
     animation: moonknight2 35s linear infinite;
 }
 .fiv {
@@ -405,7 +406,7 @@ a {
     height: 2rem;
     width: 1rem;
     inset: 0 0 0 80vw;
-    border-radius: 10px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1),rgba(68, 228, 183, 0.4));
     animation: moonknight 50s linear infinite;
 }
 .six {
@@ -413,7 +414,7 @@ a {
     height: 2rem;
     width: 1rem;
     inset: 0 0 0 95vw;
-    border-radius: 10px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1),rgba(164, 18, 18, 0.397));
     animation: moonknight 80s linear infinite;
 }
 
@@ -422,42 +423,42 @@ a {
         top: 90vh;
         opacity: 1;
         transform: rotate(45deg);
-        box-shadow: 10px 10px 10px rgb(31, 113, 180),
-            10px 10px 10px rgb(31, 113, 180);
+        /* box-shadow: 10px 10px 10px rgb(31, 113, 180),
+            10px 10px 10px rgb(170, 31, 180); */
     }
     20% {
         top: 80vh;
         opacity: 0.8;
         transform: rotate(90deg);
-        box-shadow: 8px 8px 8px rgb(21, 199, 27),
-            10px 10px 10px rgb(31, 113, 180);
+        /* box-shadow: 8px 8px 8px rgb(21, 199, 27),
+            10px 10px 10px rgb(31, 113, 180); */
     }
     40% {
         top: 60vh;
         opacity: 0.6;
         transform: rotate(135deg);
-        box-shadow: 6px 6px 6px rgb(168, 28, 154),
-            10px 10px 10px rgb(31, 113, 180);
+        /* box-shadow: 6px 6px 6px rgb(168, 28, 154),
+            10px 10px 10px rgb(31, 113, 180); */
     }
     60% {
         top: 40vh;
         opacity: 0.4;
         transform: rotate(180deg);
-        box-shadow: 4px 4px 4px rgb(218, 8, 15),
-            10px 10px 10px rgb(31, 113, 180);
+        /* box-shadow: 4px 4px 4px rgb(218, 8, 15),
+            10px 10px 10px rgb(31, 113, 180); */
     }
     80% {
         top: 20vh;
         opacity: 0.2;
         transform: rotate(225deg);
-        box-shadow: 2px 2px 2px rgb(224, 203, 13),
-            10px 10px 10px rgb(31, 113, 180);
+        /* box-shadow: 2px 2px 2px rgb(224, 203, 13),
+            10px 10px 10px rgb(31, 113, 180); */
     }
     100% {
         top: 0vh;
         opacity: 0;
         transform: rotate(360deg);
-        box-shadow: 2px 2px 4px rgb(9, 20, 29), 10px 10px 10px rgb(31, 113, 180);
+        /* box-shadow: 2px 2px 4px rgb(9, 20, 29), 10px 10px 10px rgb(31, 113, 180); */
     }
 }
 @keyframes moonknight2 {
@@ -465,43 +466,43 @@ a {
         top: 90vh;
         opacity: 1;
         transform: rotate(45deg);
-        box-shadow: 10px 10px 10px rgb(180, 170, 31),
-            10px 10px 10px rgb(31, 113, 180), 10px 10px 10px rgb(180, 31, 81);
+        /* box-shadow: 10px 10px 10px rgb(180, 170, 31),
+            10px 10px 10px rgb(31, 113, 180), 10px 10px 10px rgb(180, 31, 81); */
     }
     20% {
         top: 80vh;
         opacity: 0.8;
         transform: rotate(90deg);
-        box-shadow: 8px 8px 8px rgb(235, 4, 239),
-            10px 10px 10px rgb(31, 113, 180), 10px 10px 10px rgb(180, 31, 81);
+        /* box-shadow: 8px 8px 8px rgb(235, 4, 239),
+            10px 10px 10px rgb(31, 113, 180), 10px 10px 10px rgb(31, 118, 180); */
     }
     40% {
         top: 60vh;
         opacity: 0.6;
         transform: rotate(135deg);
-        box-shadow: 6px 6px 6px rgb(225, 11, 29),
-            10px 10px 10px rgb(31, 113, 180), 10px 10px 10px rgb(180, 31, 81);
+        /* box-shadow: 6px 6px 6px rgb(225, 11, 29),
+            10px 10px 10px rgb(31, 113, 180), 10px 10px 10px rgb(180, 31, 81); */
     }
     60% {
         top: 40vh;
         opacity: 0.4;
         transform: rotate(180deg);
-        box-shadow: 4px 4px 4px rgb(222, 180, 180),
-            10px 10px 10px rgb(31, 113, 180), 10px 10px 10px rgb(180, 31, 81);
+        /* box-shadow: 4px 4px 4px rgb(222, 180, 180),
+            10px 10px 10px rgb(31, 113, 180), 10px 10px 10px rgb(180, 31, 81); */
     }
     80% {
         top: 20vh;
         opacity: 0.2;
         transform: rotate(225deg);
-        box-shadow: 2px 2px 2px rgb(70, 189, 240),
-            10px 10px 10px rgb(31, 113, 180), 10px 10px 10px rgb(180, 31, 81);
+        /* box-shadow: 2px 2px 2px rgb(70, 189, 240),
+            10px 10px 10px rgb(31, 113, 180), 10px 10px 10px rgb(180, 31, 81); */
     }
     100% {
         top: 0vh;
         opacity: 0;
         transform: rotate(360deg);
-        box-shadow: 2px 2px 4px rgb(12, 197, 30),
-            10px 10px 10px rgb(31, 113, 180), 10px 10px 10px rgb(180, 31, 81);
+        /* box-shadow: 2px 2px 4px rgb(12, 197, 30),
+            10px 10px 10px rgb(31, 113, 180), 10px 10px 10px rgb(180, 31, 81); */
     }
 }
 
