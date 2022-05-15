@@ -21,15 +21,10 @@ export const ParticlesPage = (props: Props) => {
         fpsLimit: 30,
         interactivity: {
           events: {
-            onClick: {
-              enable: true,
-              mode: "push",
-            },
             onHover: {
               enable: true,
               mode: "repulse",
             },
-            resize: false,
           },
           modes: {
             push: {
@@ -45,16 +40,6 @@ export const ParticlesPage = (props: Props) => {
           color: {
             value: "#7ef4dc",
           },
-          links: {
-            color: "#ffffff",
-            distance: 150,
-            enable: false,
-            opacity: 0.5,
-            width: 1,
-          },
-          collisions: {
-            enable: false,
-          },
           move: {
             direction: "none",
             enable: true,
@@ -63,17 +48,16 @@ export const ParticlesPage = (props: Props) => {
             },
             random: true,
             speed: 3,
-            straight: false,
           },
           number: {
             density: {
               enable: true,
-              area: 800,
+              area: 500,
             },
             value: 50,
           },
           opacity: {
-            value: 0.3,
+            value: .2,
           },
           shape: {
             type: "circle",
