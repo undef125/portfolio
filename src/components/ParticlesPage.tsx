@@ -18,7 +18,7 @@ export const ParticlesPage = (props: Props) => {
             value: "#3d404b",
           },
         },
-        fpsLimit: 120,
+        fpsLimit: 30,
         interactivity: {
           events: {
             onClick: {
@@ -29,7 +29,7 @@ export const ParticlesPage = (props: Props) => {
               enable: true,
               mode: "repulse",
             },
-            resize: true,
+            resize: false,
           },
           modes: {
             push: {
@@ -53,7 +53,7 @@ export const ParticlesPage = (props: Props) => {
             width: 1,
           },
           collisions: {
-            enable: true,
+            enable: false,
           },
           move: {
             direction: "none",

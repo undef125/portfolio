@@ -506,13 +506,13 @@ a {
     }
 }
 
-.progress-bar {
+div[role="progressbar"] {
     background-image: linear-gradient(
         to left,
         #ae6770,
         #445e80,
-        #298ca4,
-    ) !important;
+        #298ca4
+    ) ;
 }
 
 .particles{
