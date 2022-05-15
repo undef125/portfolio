@@ -511,6 +511,11 @@ a {
         to left,
         #ae6770,
         #445e80,
-        #298ca4
+        #298ca4,
     ) !important;
+}
+
+.particles{
+    position: fixed;
+    z-index: -1;
 }
