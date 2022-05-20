@@ -6,8 +6,8 @@ export const AboutMe = () => {
                     <div className="hi">Hi, I'm</div>
                     <div className="name">Kapil Kunwar</div>
                     <p>
-                        I'm a talented frontend developer with a strong work
-                        ethic and a passion for what I do.Currently a computer engineering student at TU IOE, Purwanchal Campus Dharan.
+                        I'm a frontend web developer with a strong work
+                        ethic and a passion for what I do.Currently a 3<sup>rd<sup> year computer engineering student at TU IOE, Purwanchal Campus Dharan.
                     </p>
                     <button className="cvButton">Download CV</button>
                 </div>
