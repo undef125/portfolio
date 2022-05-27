@@ -31,6 +31,7 @@ function App() {
             />
             <Helmet>
                 <meta charSet="utf-8" />
+                <title>Kapil Kunwar</title>
                 <meta property="title" content="Kapil Kunwar" />
                 <meta
                     name="description"
