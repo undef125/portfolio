@@ -12,7 +12,7 @@ export const AboutMe = () => {
                     <button className="cvButton">Download CV</button>
                 </div>
                 <div className="imageSection">
-                    <img src="/done.png" alt="" />
+                    <img src="/prof.png" alt="" />
                 </div>
             </div>
         </>

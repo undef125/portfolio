@@ -113,7 +113,7 @@ a {
     margin: auto;
 }
 .imageSection > img {
-    height: 22rem;
+    height: 25rem;
     object-fit: cover;
     margin-bottom: 0;
     filter: drop-shadow(1px 1px 2px rgb(196, 206, 206));
@@ -158,7 +158,7 @@ a {
         align-items: center;
     }
     .imageSection > img {
-        height: 30rem;
+        height: 32rem;
     }
     .cvButton {
         background-color: inherit;
