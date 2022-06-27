@@ -19,6 +19,7 @@ function App() {
                     name="description"
                     content="Kapil Kunwar, Learner | Web Developer |  Computer Engineering Student"
                 />
+                <meta property="og:image" content="/prof.jpg" />
                 <title>Kapil Kunwar</title>
             </Helmet>
             <div className="App">
