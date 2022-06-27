@@ -3,12 +3,10 @@
 .sidenav {
     height: 100%;
     width: 3.2rem;
-    /* background-color: #bfbbbb; */
     user-select: none;
-    /* box-shadow: 1px 2px 5px black; */
     min-height: 100vh;
     max-height: 100vh;
-    background: linear-gradient(135deg, rgba(255,255,255,0.1),rgba(255,255,255,0));
+    background: linear-gradient(135deg, #37383f ,#3c3e48);
     backdrop-filter: blur(10px);
     --webkit-backdrop-filter: blur(10px);
     border-radius: 0px;
@@ -57,7 +55,7 @@ a {
 }
 
 .active {
-    background-color: #3d404b;
+    background-color: #55575e;
 }
 
 /* about me */
@@ -94,13 +92,8 @@ a {
 }
 .name {
     font-size: 3rem;
-    background: linear-gradient(to bottom, #4266c0, #16af93);
+    color: #4266c0;
     font-family: "Rajdhani", sans-serif;
-
-    background-attachment: fixed;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
 }
 .textSection > p {
     width: 90%;
@@ -113,10 +106,10 @@ a {
     margin: auto;
 }
 .imageSection > img {
-    height: 25rem;
+    height: 20rem;
     object-fit: cover;
     margin-bottom: 0;
-    filter: drop-shadow(1px 1px 2px rgb(196, 206, 206));
+    /* filter: drop-shadow(1px 1px 2px rgb(196, 206, 206)); */
 }
 
 @keyframes anim {
@@ -153,23 +146,29 @@ a {
     }
 
     .imageSection {
-        height: 100%;
+        height: 25rem;
         display: flex;
         align-items: center;
     }
     .imageSection > img {
-        height: 32rem;
+        height: 100%;
+        border-radius: 10px;
     }
     .cvButton {
-        background-color: inherit;
+        width: 10rem;
+        height: 3rem;
+        color: rgb(196, 191, 191);
+        margin: auto;
         outline: none;
-        border: 1px solid rgb(38, 155, 18);
+        background-color: inherit;
+        border: 1px solid #3a5fbc;
         font-size: 1.2rem;
         cursor: pointer;
         transition: background-color 0.4s ease;
     }
     .cvButton:hover {
-        background-color: rgba(35, 170, 20, 0.266);
+        background-color: #204194;
+        /* background-image: linear-gradient(to bottom, #4266c0, #16af93); */
     }
 }
 
@@ -180,7 +179,7 @@ a {
 .heading,
 .contacttext,
 .mailme > p {
-    color: #727a94;
+    color: #cdd1e0;
     font-family: "Rajdhani", sans-serif;
     display: flex;
     font-size: 3.5rem;

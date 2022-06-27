@@ -4,7 +4,7 @@ import { Tooltip, OverlayTrigger } from "react-bootstrap";
 export const Works = () => {
     const works: Array<Object> = [
         {
-            imgUrl: "/chatapp.png",
+            imgUrl: "/chatapp.png",   //chatapp
             title: "Group Chat App",
             linkGithub: "https://github.com/undef125/chatapp",
             linkLive: "https://chatappfrb.vercel.app/",
@@ -15,12 +15,13 @@ export const Works = () => {
             linkGithub: "https://github.com/undef125/tictactoe",
             linkLive: "https://tictactoeundef.netlify.app/",
         },
-        // {
-        //     imgUrl: "/calculator.png",  //calculator
-        //     title: "Calculator",
-        //     linkGithub: "https://github.com/undef125/basiccalculator",
-        //     linkLive: "https://calculatorundef.netlify.app/",
-        // },
+   
+        {
+            imgUrl: "/calculator.png", //calculator
+            title: "Basic Calculator",
+            linkGithub: "https://github.com/undef125/basiccalculator",
+            linkLive: "https://calculatorundef.netlify.app/",
+        },
         {
             imgUrl: "/playsongs.png", //playsongs
             title: "Play Songs",
@@ -34,25 +35,25 @@ export const Works = () => {
             linkLive: "https://todowfrb.vercel.app/",
         },
         {
-            imgUrl: "/b64.png", //todo
+            imgUrl: "/b64.png", //base64
             title: "Base64",
             linkGithub: "https://github.com/undef125/base64en",
             linkLive: "https://base64en.netlify.app",
         },
         {
-            imgUrl: "/moviesnow.png", //todo
+            imgUrl: "/moviesnow.png", //moviesnow
             title: "MoviesNow",
             linkGithub: "https://github.com/undef125/moviesnow",
             linkLive: "",
         },
         {
-            imgUrl: "/nepdet.png", //todo
+            imgUrl: "/nepdet.png", //nepal detail
             title: "Nepal Detail",
             linkGithub: "https://github.com/undef125/nepdet",
             linkLive: "https://nepdet101.netlify.app/",
         },
         {
-            imgUrl: "/meowos.png", //todo
+            imgUrl: "/meowos.png", //meow os website
             title: "Meow OS",
             linkGithub: "",
             linkLive: "https://anon125a.github.io/meowos/",
