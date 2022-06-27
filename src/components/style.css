@@ -63,7 +63,7 @@ a {
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1.1fr 1fr;
     user-select: none;
 }
 .textSection {
@@ -74,17 +74,22 @@ a {
     color: rgb(255, 255, 255);
     margin-top: 2rem;
     margin-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+.textSection > p {
+    padding-bottom: 1rem;
 }
 .cvButton {
     width: 10rem;
     height: 3rem;
     color: rgb(196, 191, 191);
-    background-color: rgba(35, 170, 20, 0.266);
     margin: auto;
     outline: none;
-    border: 1px solid rgb(38, 155, 18);
+    background-color: inherit;
+    border: 1px solid #3a5fbc;
     font-size: 1.2rem;
     cursor: pointer;
+    background-color: #3a5fbcb3;
 }
 .hi {
     font-size: 1.3rem;
@@ -104,12 +109,13 @@ a {
 }
 .imageSection {
     margin: auto;
+    width: 20rem;
 }
 .imageSection > img {
-    height: 20rem;
+    width: 100%;
     object-fit: cover;
     margin-bottom: 0;
-    /* filter: drop-shadow(1px 1px 2px rgb(196, 206, 206)); */
+    border-radius: 10px;
 }
 
 @keyframes anim {
@@ -120,10 +126,16 @@ a {
 
 /*                  responsive            */
 @media only screen and (min-width: 600px) {
+    .rightSection{
+        margin: auto;
+
+    }
+    .leftSection{
+        padding-left: 1rem;
+    }
     .aboutmecontainer {
         display: flex;
         height: 100vh;
-        justify-content: center;
         align-items: center;
     }
     .textSection {
@@ -148,11 +160,9 @@ a {
     .imageSection {
         height: 25rem;
         display: flex;
-        align-items: center;
     }
     .imageSection > img {
         height: 100%;
-        border-radius: 10px;
     }
     .cvButton {
         width: 10rem;
@@ -365,7 +375,6 @@ a {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 10px;
-    /* box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37); */
 }
 
 .one {
