@@ -75,7 +75,7 @@ export const Works = () => {
     };
     return (
         <div className="worksPage">
-            <div className="contacttext">Works</div>
+            <div className="contacttext sticky">Works</div>
             <div className="allWorks">
                 {works.map((indWork: any) => {
                     return (

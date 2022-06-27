@@ -30,7 +30,7 @@ export const Contact = () => {
                     </div>
                     <div className="telegram">
                         <div className="imgholder">
-                            <img src="/telegram.png" alt="" onClick={() => openSite("t.me/Cykik0")}/>
+                            <img src="/telegram.png" alt="" onClick={() => openSite("https://t.me/Cykik0")}/>
                         </div>
                         <p>Telegram</p>
                     </div>

@@ -6,12 +6,12 @@
     user-select: none;
     min-height: 100vh;
     max-height: 100vh;
-    background: linear-gradient(135deg, #37383f ,#3c3e48);
+    background: linear-gradient(135deg, #37383f, #3c3e48);
     backdrop-filter: blur(10px);
     --webkit-backdrop-filter: blur(10px);
     border-radius: 0px;
-    border: 1px solid rgba(255,255,255,0.18);
-    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 .sidenav > nav {
@@ -126,11 +126,10 @@ a {
 
 /*                  responsive            */
 @media only screen and (min-width: 600px) {
-    .rightSection{
+    .rightSection {
         margin: auto;
-
     }
-    .leftSection{
+    .leftSection {
         padding-left: 1rem;
     }
     .aboutmecontainer {
@@ -193,7 +192,7 @@ a {
     font-family: "Rajdhani", sans-serif;
     display: flex;
     font-size: 3.5rem;
-    margin-left: 0.4rem;
+    padding-left: 0.4rem;
 }
 .progHolder {
     width: 80%;
@@ -317,7 +316,7 @@ a {
     background-color: #afb2bc;
     padding-bottom: 0.4rem;
     border-radius: 0 0 10px 10px;
-    box-shadow: 1px 1px 5px white;
+    /* box-shadow: 1px 1px 5px white; */
 }
 .workImageContainer {
     height: 10rem;
@@ -349,15 +348,19 @@ a {
         width: 100vw;
         user-select: none;
     }
+
     .allWorks {
         width: 80%;
         margin: auto;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-gap: 2rem;
     }
     .workHolder:hover {
-        box-shadow: 1px 1px 6px rgb(121, 123, 123);
+        box-shadow: 1px 1px 6px rgb(2, 148, 148);
+    }
+    .workImageContainer {
+        cursor: pointer;
     }
 }
 
@@ -370,7 +373,7 @@ a {
     height: 2rem;
     width: 2rem;
     top: 0;
-    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     opacity: 0;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -382,7 +385,11 @@ a {
     height: 2rem;
     width: 1rem;
     inset: 0 0 0 0;
-    background: linear-gradient(135deg, rgba(255,255,255,0.1),rgba(228, 68, 68, 0.4));
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.1),
+        rgba(228, 68, 68, 0.4)
+    );
     animation: moonknight 15s linear infinite;
 }
 .two {
@@ -390,7 +397,11 @@ a {
     height: 2rem;
     width: 1rem;
     inset: 0 0 0 20vw;
-    background: linear-gradient(135deg, rgba(255,255,255,0.1),rgba(93, 237, 36, 0.4));
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.1),
+        rgba(93, 237, 36, 0.4)
+    );
     animation: moonknight2 60s linear infinite;
 }
 .thr {
@@ -398,7 +409,11 @@ a {
     height: 2rem;
     width: 1rem;
     inset: 0 0 0 40vw;
-    background: linear-gradient(135deg, rgba(255,255,255,0.1),rgba(57, 12, 206, 0.4));
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.1),
+        rgba(57, 12, 206, 0.4)
+    );
     animation: moonknight 22s linear infinite;
 }
 .fou {
@@ -406,7 +421,11 @@ a {
     height: 2rem;
     width: 1rem;
     inset: 0 0 0 60vw;
-    background: linear-gradient(135deg, rgba(255,255,255,0.1),rgba(194, 5, 237, 0.4));
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.1),
+        rgba(194, 5, 237, 0.4)
+    );
     animation: moonknight2 35s linear infinite;
 }
 .fiv {
@@ -414,7 +433,11 @@ a {
     height: 2rem;
     width: 1rem;
     inset: 0 0 0 80vw;
-    background: linear-gradient(135deg, rgba(255,255,255,0.1),rgba(68, 228, 183, 0.4));
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.1),
+        rgba(68, 228, 183, 0.4)
+    );
     animation: moonknight 50s linear infinite;
 }
 .six {
@@ -422,7 +445,11 @@ a {
     height: 2rem;
     width: 1rem;
     inset: 0 0 0 95vw;
-    background: linear-gradient(135deg, rgba(255,255,255,0.1),rgba(164, 18, 18, 0.397));
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.1),
+        rgba(164, 18, 18, 0.397)
+    );
     animation: moonknight 80s linear infinite;
 }
 
@@ -515,15 +542,18 @@ a {
 }
 
 div[role="progressbar"] {
-    background-image: linear-gradient(
-        to left,
-        #ae6770,
-        #445e80,
-        #298ca4
-    ) ;
+    background-image: linear-gradient(to left, #ae6770, #445e80, #298ca4);
 }
 
-.particles{
+.particles {
     position: fixed;
     z-index: -1;
+}
+
+
+.sticky{
+    width: 100%;
+    background-color: #212529;
+    position: sticky;
+    top:0;
 }
