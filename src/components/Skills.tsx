@@ -1,48 +1,92 @@
 import React, { FC } from "react";
-import { ProgressBar } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./style.css";
 
-export const Skills:FC = () => {
+export const Skills: FC = () => {
     return (
         <div className="skillHolder">
             <div className="heading">Skills</div>
             <div className="progHolder">
                 <div className="prog">
-                    <img src="/html.png" alt="" />
-                    <ProgressBar   now={99} label={"HTML"} />
+                    <div className="skillimageholder">
+                        <img src="/html.png" alt="" />
+                    </div>
+                    <div className="langdetail">
+                        <div className="langname">HTML</div>
+                        <div className="level">Advance</div>
+                    </div>
                 </div>
                 <div className="prog">
-                    <img src="/css.png" alt="" />
-                    <ProgressBar   now={90} label={"CSS"} />
+                    <div className="skillimageholder">
+                        <img src="/css.png" alt="" />
+                    </div>
+                    <div className="langdetail">
+                        <div className="langname">CSS</div>
+                        <div className="level">Intermediate</div>
+                    </div>
                 </div>
                 <div className="prog">
-                    <img src="/js.png" alt="" />
-                    <ProgressBar  now={88} label={"JavaScript"} />
+                    <div className="skillimageholder">
+                        <img src="/js.png" alt="" />
+                    </div>
+                    <div className="langdetail">
+                        <div className="langname">JavaScript</div>
+                        <div className="level">Intermediate</div>
+                    </div>
                 </div>
                 <div className="prog">
-                    <img src="/logo192.png" alt="" />
-                    <ProgressBar  now={80} label={"React"} />
+                    <div className="skillimageholder">
+                        <img src="/logo192.png" alt="" />
+                    </div>
+                    <div className="langdetail">
+                        <div className="langname">React</div>
+                        <div className="level">Intermediate</div>
+                    </div>
                 </div>
                 <div className="prog">
-                    <img src="/bootstrap.png" alt="" />
-                    <ProgressBar
-                        
-                        now={96}
-                        label={"Bootstrap and ReactBootstrap"}
-                    />
+                    <div className="skillimageholder">
+                        <img src="/bootstrap.png" alt="" />
+                    </div>
+                    <div className="langdetail">
+                        <div className="langname">Bootstrap</div>
+                        <div className="level">Intermediate</div>
+                    </div>
                 </div>
                 <div className="prog">
-                <img src="/redux.png" alt="" />
-                    <ProgressBar  now={60} label={"Redux-Toolkit"} />
+                    <div className="skillimageholder">
+                        <img src="/redux.png" alt="" />
+                    </div>
+                    <div className="langdetail">
+                        <div className="langname">Redux</div>
+                        <div className="level">Intermediate</div>
+                    </div>
                 </div>
                 <div className="prog">
-                    <img src="/typescript.png" alt="" />
-                    <ProgressBar  now={68} label={"TypeScript"} />
+                    <div className="skillimageholder">
+                        <img src="/typescript.png" alt="" />
+                    </div>
+                    <div className="langdetail">
+                        <div className="langname">TypeScript</div>
+                        <div className="level">Beginner</div>
+                    </div>
                 </div>
                 <div className="prog">
-                    <img src="/c.png" alt="" />
-                    <ProgressBar  now={70} label={"C/C++"} />
+                    <div className="skillimageholder">
+                        <img src="/c.png" alt="" />
+                    </div>
+                    <div className="langdetail">
+                        <div className="langname">C/C++</div>
+                        <div className="level">Intermediate</div>
+                    </div>
+                </div>
+                <div className="prog">
+                    <div className="skillimageholder">
+                        <img src="/nodejs.png" alt="" />
+                    </div>
+                    <div className="langdetail">
+                        <div className="langname">NodeJS</div>
+                        <div className="level">Intermediate</div>
+                    </div>
                 </div>
             </div>
         </div>

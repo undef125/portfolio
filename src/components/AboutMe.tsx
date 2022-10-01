@@ -7,7 +7,7 @@ export const AboutMe = () => {
                         <div className="hi">Hi, I'm</div>
                         <div className="name">Kapil Kunwar</div>
                         <p>
-                            I'm a frontend web developer with a strong work
+                            I'm a MERN stack web developer with a strong work
                             ethic and a passion for what I do.
                             <br />
                             Currently a third year computer engineering student

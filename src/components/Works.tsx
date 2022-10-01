@@ -4,6 +4,12 @@ import { Tooltip, OverlayTrigger } from "react-bootstrap";
 export const Works = () => {
     const works: Array<Object> = [
         {
+            imgUrl: "/booksmart.png",   //chatapp
+            title: "Booksmart FullStack",
+            linkGithub: "https://github.com/undef125/booksmartclient",
+            linkLive: "https://booksmartnepal.netlify.app/",
+        },
+        {
             imgUrl: "/chatapp.png",   //chatapp
             title: "Group Chat App",
             linkGithub: "https://github.com/undef125/chatapp",
@@ -90,7 +96,7 @@ export const Works = () => {
                                         <OverlayTrigger
                                             placement="right"
                                             delay={{ show: 50, hide: 100 }}
-                                            overlay={renderTooltipLive}
+                                            overlay={renderTooltipCode}
                                         >
                                             <div className="code">
                                                 <AiOutlineCode
