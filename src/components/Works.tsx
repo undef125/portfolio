@@ -21,12 +21,17 @@ export const Works = () => {
             linkGithub: "https://github.com/undef125/tictactoe",
             linkLive: "https://tictactoeundef.netlify.app/",
         },
-   
         {
-            imgUrl: "/calculator.png", //calculator
-            title: "Basic Calculator",
-            linkGithub: "https://github.com/undef125/basiccalculator",
-            linkLive: "https://calculatorundef.netlify.app/",
+            imgUrl: "/towerofhanoi.png", //towerofhanoi
+            title: "Tower Of Hanoi",
+            linkGithub: "https://github.com/undef125/towerofhanoi",
+            linkLive: "https://towerfhanoi.netlify.app/",
+        },
+        {
+            imgUrl: "/serialatease.png", //serialatease
+            title: "Serial At Ease",
+            linkGithub: "https://github.com/undef125/serialatease",
+            linkLive: "https://serialatease.netlify.app/",
         },
         {
             imgUrl: "/playsongs.png", //playsongs
@@ -63,6 +68,12 @@ export const Works = () => {
             title: "Meow OS",
             linkGithub: "",
             linkLive: "https://anon125a.github.io/meowos/",
+        },
+        {
+            imgUrl: "/calculator.png", //calculator
+            title: "Basic Calculator",
+            linkGithub: "https://github.com/undef125/basiccalculator",
+            linkLive: "https://calculatorundef.netlify.app/",
         },
     ];
     const renderTooltipCode = (gg: any) => {
