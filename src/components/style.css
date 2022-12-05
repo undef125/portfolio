@@ -195,6 +195,7 @@ a {
     padding-left: 0.4rem;
 }
 .progHolder {
+    height: 80vh;
     width: 80%;
     margin: auto auto;
     display: grid;
@@ -202,6 +203,10 @@ a {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
     justify-content: center;
+    overflow-y: scroll;
+}
+.progHolder::-webkit-scrollbar{
+    width: 0px;
 }
 .prog {
     width: 13.5rem;

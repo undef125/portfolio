@@ -3,9 +3,19 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./style.css";
 
 export const Skills: FC = () => {
+
+    const works: Array<Object> = [
+        {
+            imgUrl: "/html.png",   //chatapp
+            langname: "HTML",
+            level: "Advance",
+        },
+    ];
+
+
     return (
         <div className="skillHolder">
-            <div className="heading">Skills</div>
+            <div className="heading sticky">Skills</div>
             <div className="progHolder">
                 <div className="prog">
                     <div className="skillimageholder">
