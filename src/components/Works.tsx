@@ -93,6 +93,10 @@ export const Works = () => {
     return (
         <div className="worksPage">
             <div className="contacttext sticky">Works</div>
+            <div className="new">
+                <div className="clientwork"></div>
+                <div className="sideprojects"></div>
+            </div>
             <div className="allWorks">
                 {works.map((indWork: any) => {
                     return (

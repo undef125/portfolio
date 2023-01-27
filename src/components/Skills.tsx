@@ -8,7 +8,6 @@ export const Skills: FC = () => {
         {
             imgUrl: "/html.png",   //chatapp
             langname: "HTML",
-            level: "Advance",
         },
     ];
 
@@ -23,7 +22,7 @@ export const Skills: FC = () => {
                     </div>
                     <div className="langdetail">
                         <div className="langname">HTML</div>
-                        <div className="level">Advance</div>
+                        
                     </div>
                 </div>
                 <div className="prog">
@@ -32,7 +31,7 @@ export const Skills: FC = () => {
                     </div>
                     <div className="langdetail">
                         <div className="langname">CSS</div>
-                        <div className="level">Intermediate</div>
+                        
                     </div>
                 </div>
                 <div className="prog">
@@ -41,7 +40,7 @@ export const Skills: FC = () => {
                     </div>
                     <div className="langdetail">
                         <div className="langname">JavaScript</div>
-                        <div className="level">Intermediate</div>
+                        
                     </div>
                 </div>
                 <div className="prog">
@@ -50,7 +49,7 @@ export const Skills: FC = () => {
                     </div>
                     <div className="langdetail">
                         <div className="langname">React</div>
-                        <div className="level">Intermediate</div>
+                        
                     </div>
                 </div>
                 <div className="prog">
@@ -59,7 +58,7 @@ export const Skills: FC = () => {
                     </div>
                     <div className="langdetail">
                         <div className="langname">Bootstrap</div>
-                        <div className="level">Intermediate</div>
+                        
                     </div>
                 </div>
                 <div className="prog">
@@ -67,8 +66,8 @@ export const Skills: FC = () => {
                         <img src="/redux.png" alt="" />
                     </div>
                     <div className="langdetail">
-                        <div className="langname">Redux</div>
-                        <div className="level">Intermediate</div>
+                        <div className="langname">Nextjs</div>
+                        
                     </div>
                 </div>
                 <div className="prog">
@@ -77,7 +76,6 @@ export const Skills: FC = () => {
                     </div>
                     <div className="langdetail">
                         <div className="langname">TypeScript</div>
-                        <div className="level">Beginner</div>
                     </div>
                 </div>
                 <div className="prog">
@@ -86,7 +84,7 @@ export const Skills: FC = () => {
                     </div>
                     <div className="langdetail">
                         <div className="langname">C/C++</div>
-                        <div className="level">Intermediate</div>
+                        
                     </div>
                 </div>
                 <div className="prog">
@@ -95,7 +93,7 @@ export const Skills: FC = () => {
                     </div>
                     <div className="langdetail">
                         <div className="langname">NodeJS</div>
-                        <div className="level">Intermediate</div>
+                        
                     </div>
                 </div>
             </div>
